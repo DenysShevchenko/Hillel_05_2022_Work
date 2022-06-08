@@ -1,10 +1,9 @@
-from typing import Generator
 
 FILENAME = "./lessons_4/classwork/generators/rockyou.txt"
 
 while True:
-    SEARCH_KEYWORD = input("Input search keyword (min 3 symbols): ").replace("\n", "")
-
+    SEARCH_KEYWORD_user = input("Input search keyword (min 3 symbols): ")
+    SEARCH_KEYWORD = SEARCH_KEYWORD_user.replace("\n", "")
     if len(SEARCH_KEYWORD) < 3:
         UserAnser = input("Bad keyword, try againe? (y/n): ")
 
