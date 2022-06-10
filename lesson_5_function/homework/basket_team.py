@@ -55,7 +55,7 @@ def add_player(players):
 
         if player_Age == 0:
 
-            UserAnser = input("The age was entered incorrectly, try againe? (y/n): ")
+            UserAnser = input("Age entered incorrectly, try againe?(y/n): ")
             if UserAnser == "n":
                 return
             else:
@@ -95,7 +95,7 @@ def search_by_number(player_Num: int, player_NumSt: str):
     return "ok"
 
 
-def input_number(saer: bool):
+def input_number(sear_N: bool):
 
     while True:
 
@@ -108,7 +108,7 @@ def input_number(saer: bool):
             if UserAnser == "n":
                 return 0
 
-        if saer == True:
+        if sear_N == True:
             res_s = search_by_number(player_Num, player_NumSt)
 
             if res_s == "ok":
@@ -149,7 +149,7 @@ def change_player_number(players):
 def sortet_team(players):
 
     Var_sort = input(
-        "How to sort list?\n\t1. Number (anser: 1)\n\t2. Name (anser: 2)\n\t3. Age (anser: 3)\n"
+        "How to sort list (anser: 1, 2, 3)?\n\t1.Number\n\t2.Name\n\t3.Age\n"
     )
 
     if Var_sort == "2":
@@ -167,7 +167,7 @@ def main():
     repr_players(team)
 
     Var_Act = input(
-        "What to do with our team?\n\t1. Add new player (anser: 1)\n\t2. Delete player (anser: 2)\n\t3. Change players number (anser: 3)\n\t4. Sorted team list (anser: 4)\n"
+        "What to do with our team (anser: 1, 2, 3, 4)?\n\t1. Add new player\n\t2. Delete player\n\t3. Change players number \n\t4. Sorted team list\n"
     )
 
     if Var_Act == "1":

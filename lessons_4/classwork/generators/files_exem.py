@@ -1,10 +1,8 @@
-from typing import Generator
-
 FILENAME = "./lessons_4/classwork/generators/rockyou.txt"
 SEARCH_KEYWORD = "admin"
 
-
-def read_lines_count_v1():  ########## VAR 1
+# VAR 1
+def read_lines_count_v1():
 
     results = []
     with open(FILENAME, encoding="utf-8") as file:
@@ -14,7 +12,8 @@ def read_lines_count_v1():  ########## VAR 1
     return results
 
 
-def read_lines_count_v2():  ######### VAR 2
+# VAR 2
+def read_lines_count_v2():
     with open(FILENAME, encoding="utf-8") as file:
         return [word for word in file.readlines() if SEARCH_KEYWORD in word]
 

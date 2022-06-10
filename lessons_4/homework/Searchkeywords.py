@@ -1,4 +1,3 @@
-
 FILENAME = "./lessons_4/classwork/generators/rockyou.txt"
 
 while True:
