@@ -103,6 +103,7 @@ def input_number(sear_N: bool):
 
         try:
             player_Num = int(player_NumSt)
+        
         except:
             UserAnser = input("Bad player number, try againe? (y/n): ")
             if UserAnser == "n":
