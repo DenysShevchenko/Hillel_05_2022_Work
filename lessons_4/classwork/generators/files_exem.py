@@ -1,9 +1,9 @@
 FILENAME = "./lessons_4/classwork/generators/rockyou.txt"
 SEARCH_KEYWORD = "admin"
 
+
 # VAR 1
 def read_lines_count_v1():
-
     results = []
     with open(FILENAME, encoding="utf-8") as file:
         for word in file.readlines():

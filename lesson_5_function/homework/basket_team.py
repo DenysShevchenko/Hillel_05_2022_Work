@@ -1,4 +1,3 @@
-# from pprint import pprint as print
 
 LOGGING = True
 
@@ -11,12 +10,12 @@ team: list[dict] = [
 
 def repr_players(players: list[dict], par_sort=False, key_sort="number"):
 
-    if par_sort == True:
+    if par_sort:
         players.sort(key=lambda x: x[key_sort])
 
     print("TEAM:")
-    for player in players:
-        print(f"\t{player['number']} " f"Name: {player['name']}, Age: {player['age']}")
+    for pla in players:
+        print(f"\t{pla['number']} " f"Name: {pla['name']}, Age: {pla['age']}")
     print("\n")
 
 
@@ -49,7 +48,7 @@ def add_player(players):
 
         try:
             player_Age = int(player_AgeSt)
-        except:
+        except ValueError:
             player_Age = 0
 
         if player_Age == 0:
@@ -103,12 +102,12 @@ def input_number(sear_N: bool):
         try:
             player_Num = int(player_NumSt)
 
-        except:
+        except ValueError:
             UserAnser = input("Bad player number, try againe? (y/n): ")
             if UserAnser == "n":
                 return 0
 
-        if sear_N == True:
+        if sear_N:
             res_s = search_by_number(player_Num, player_NumSt)
 
             if res_s == "ok":
@@ -165,9 +164,13 @@ def sortet_team(players):
 def main():
 
     repr_players(team)
-
+    main_qutions = "Option team list (anser: 1,2,3,4)?\n\t"
+    first_option = "1.Add new player\n\t"
+    sec_option = "2.Del player\n\t"
+    tree_option = "3.Change number \n\t"
+    four_option = "4 .Sorted team\n"
     Var_Act = input(
-        "What to do with our team (anser: 1, 2, 3, 4)?\n\t1. Add new player\n\t2. Delete player\n\t3. Change players number \n\t4. Sorted team list\n"
+        main_qutions+first_option+sec_option+tree_option+four_option
     )
 
     if Var_Act == "1":
