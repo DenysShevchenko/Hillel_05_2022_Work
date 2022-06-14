@@ -49,7 +49,6 @@ def add_player(players):
 
         try:
             player_Age = int(player_AgeSt)
-
         except:
             player_Age = 0
 
@@ -103,7 +102,7 @@ def input_number(sear_N: bool):
 
         try:
             player_Num = int(player_NumSt)
-        
+
         except:
             UserAnser = input("Bad player number, try againe? (y/n): ")
             if UserAnser == "n":
