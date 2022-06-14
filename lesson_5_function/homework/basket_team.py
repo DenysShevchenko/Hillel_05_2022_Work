@@ -165,10 +165,10 @@ def main():
 
     repr_players(team)
     main_qutions = "Option team list (anser: 1,2,3,4)?\n\t"
-    first_option = "1.Add new player\n\t"
-    sec_option = "2.Del player\n\t"
-    tree_option = "3.Change number \n\t"
-    four_option = "4 .Sorted team\n"
+    first_option = "1. Add new player\n\t"
+    sec_option = "2. Delete player\n\t"
+    tree_option = "3. Change player number \n\t"
+    four_option = "4. Sorted team list\n"
     Var_Act = input(
         main_qutions+first_option+sec_option+tree_option+four_option
     )
