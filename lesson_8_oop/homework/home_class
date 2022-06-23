@@ -24,10 +24,10 @@ class Circle(Shape):
     @abstractclassmethod
     def paint(self):
         return"""
-                   class Circle
-                     --
-                    -  -
-                     --
+                class Circle
+                 --
+                -  -
+                 --
                  """
 
 
