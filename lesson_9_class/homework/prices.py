@@ -1,7 +1,7 @@
 from random import choice
 
 exchange_rates = [
-    {"from": "UAH", "to": "USD", "value": 0.02777778},
+    {"from": "UAH", "to": "USD", "value": 0.02778},
     {"from": "USD", "to": "UAH", "value": 36},
 ]
 
