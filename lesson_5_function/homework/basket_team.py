@@ -1,4 +1,3 @@
-
 LOGGING = True
 
 team: list[dict] = [
@@ -170,7 +169,7 @@ def main():
     tree_option = "3. Change player number \n\t"
     four_option = "4. Sorted team list\n"
     Var_Act = input(
-        main_qutions+first_option+sec_option+tree_option+four_option
+        main_qutions + first_option + sec_option + tree_option + four_option
     )
 
     if Var_Act == "1":
