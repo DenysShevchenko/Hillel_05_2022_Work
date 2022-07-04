@@ -1,7 +1,7 @@
 from threading import Thread
 from time import sleep
 
-from services import get_c, get_d
+from services import gec, ged
 
 
 def laun_r(n: int, c_down: int, dela: float) -> None:
@@ -20,7 +20,7 @@ def main():
     N = 1000
 
     threads = [
-        Thread(target=laun_r, kwargs={"n": i, "c_down": get_c(), "dela": get_d()})
+        Thread(target=laun_r, kwargs={"n": i, "c_down": gec(), "dela": ged()})
         for i in range(1, N + 1)
     ]
 

@@ -30,13 +30,9 @@ def main():
     for thread in threads:
         thread.join()
 
-    # Домашнє завдання 2
+    # Частина 2 домашнього завдання
     numbers = [40000, 400, 100000, 700]
-    tasks = [
-        get_primes_amount(
-            num)
-        for num in numbers
-    ]
+    tasks = [get_primes_amount(num) for num in numbers]
     loop = asyncio.get_event_loop()
     loop.run_until_complete(asyncio.gather(*tasks))
     loop.close()
@@ -54,7 +50,7 @@ async def get_primes_amount(num):
             if counter > 2:
                 break
         results += 1
-    print("Закінчили опрацювання числа " + str(num)+" рез: "+str(results))
+    print("Закінчили опрацювання числа " + str(num) + " рез: " + str(results))
     return results
 
 
