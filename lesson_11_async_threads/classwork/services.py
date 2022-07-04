@@ -1,9 +1,9 @@
 import random
 
 
-def get_c():
+def gec():
     return random.randint(3, 5)
 
 
-def get_d():
+def ged():
     return random.random()
