@@ -5,14 +5,14 @@ from random import choice
 class Shape(ABC):
     @abstractclassmethod
     def draw(self):
-        print('its work')
+        print("its work")
         pass
 
 
 class Rectangle(Shape):
     @abstractclassmethod
     def paint(self):
-        return"""
+        return """
                  class Rectangle
                  ----
                  |  |
@@ -23,7 +23,7 @@ class Rectangle(Shape):
 class Circle(Shape):
     @abstractclassmethod
     def paint(self):
-        return"""
+        return """
                 class Circle
                  --
                 -  -
