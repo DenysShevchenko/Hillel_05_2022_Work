@@ -1,0 +1,10 @@
+async def main():
+    async with aiohttp.ClientSession() as session:
+        async with session.post('http://example.com',
+            headers={'Authorization':'Bearer 123456', 'Content-Type':'application/json'},
+            json={'title':'Try Bearer'}) as resp: # [1]
+
+            response = await resp.json() # [2]
+            print(response)
+
+asyncio.run(main())
